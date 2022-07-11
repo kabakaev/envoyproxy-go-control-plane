@@ -8,9 +8,9 @@ package envoy_config_filter_network_dubbo_proxy_v2alpha1
 
 import (
 	_ "github.com/cncf/xds/go/udpa/annotations"
-	route "github.com/envoyproxy/go-control-plane/envoy/api/v2/route"
-	_type "github.com/envoyproxy/go-control-plane/envoy/type"
-	matcher "github.com/envoyproxy/go-control-plane/envoy/type/matcher"
+	route "github.com/kabakaev/envoyproxy-go-control-plane/envoy/api/v2/route"
+	_type "github.com/kabakaev/envoyproxy-go-control-plane/envoy/type"
+	matcher "github.com/kabakaev/envoyproxy-go-control-plane/envoy/type/matcher"
 	_ "github.com/envoyproxy/protoc-gen-validate/validate"
 	proto "github.com/golang/protobuf/proto"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"

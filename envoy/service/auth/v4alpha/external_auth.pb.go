@@ -9,9 +9,9 @@ package envoy_service_auth_v4alpha
 import (
 	context "context"
 	_ "github.com/cncf/xds/go/udpa/annotations"
-	_ "github.com/envoyproxy/go-control-plane/envoy/annotations"
-	v4alpha "github.com/envoyproxy/go-control-plane/envoy/config/core/v4alpha"
-	v3 "github.com/envoyproxy/go-control-plane/envoy/type/v3"
+	_ "github.com/kabakaev/envoyproxy-go-control-plane/envoy/annotations"
+	v4alpha "github.com/kabakaev/envoyproxy-go-control-plane/envoy/config/core/v4alpha"
+	v3 "github.com/kabakaev/envoyproxy-go-control-plane/envoy/type/v3"
 	_ "github.com/envoyproxy/protoc-gen-validate/validate"
 	proto "github.com/golang/protobuf/proto"
 	_struct "github.com/golang/protobuf/ptypes/struct"

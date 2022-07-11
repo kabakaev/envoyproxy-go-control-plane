@@ -15,9 +15,9 @@
 package cache
 
 import (
-	"github.com/envoyproxy/go-control-plane/pkg/cache/types"
-	"github.com/envoyproxy/go-control-plane/pkg/log"
-	"github.com/envoyproxy/go-control-plane/pkg/server/stream/v3"
+	"github.com/kabakaev/envoyproxy-go-control-plane/pkg/cache/types"
+	"github.com/kabakaev/envoyproxy-go-control-plane/pkg/log"
+	"github.com/kabakaev/envoyproxy-go-control-plane/pkg/server/stream/v3"
 )
 
 // Respond to a delta watch with the provided snapshot value. If the response is nil, there has been no state change.

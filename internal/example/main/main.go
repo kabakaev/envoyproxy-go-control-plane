@@ -18,10 +18,10 @@ import (
 	"flag"
 	"os"
 
-	"github.com/envoyproxy/go-control-plane/internal/example"
-	"github.com/envoyproxy/go-control-plane/pkg/cache/v3"
-	"github.com/envoyproxy/go-control-plane/pkg/server/v3"
-	"github.com/envoyproxy/go-control-plane/pkg/test/v3"
+	"github.com/kabakaev/envoyproxy-go-control-plane/internal/example"
+	"github.com/kabakaev/envoyproxy-go-control-plane/pkg/cache/v3"
+	"github.com/kabakaev/envoyproxy-go-control-plane/pkg/server/v3"
+	"github.com/kabakaev/envoyproxy-go-control-plane/pkg/test/v3"
 )
 
 var (

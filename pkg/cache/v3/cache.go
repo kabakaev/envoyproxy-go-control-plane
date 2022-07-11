@@ -21,13 +21,13 @@ import (
 	"fmt"
 	"sync/atomic"
 
-	discovery "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v3"
+	discovery "github.com/kabakaev/envoyproxy-go-control-plane/envoy/service/discovery/v3"
 
 	"github.com/golang/protobuf/ptypes/any"
 
-	"github.com/envoyproxy/go-control-plane/pkg/cache/types"
-	"github.com/envoyproxy/go-control-plane/pkg/server/stream/v3"
-	ttl "github.com/envoyproxy/go-control-plane/pkg/ttl/v3"
+	"github.com/kabakaev/envoyproxy-go-control-plane/pkg/cache/types"
+	"github.com/kabakaev/envoyproxy-go-control-plane/pkg/server/stream/v3"
+	ttl "github.com/kabakaev/envoyproxy-go-control-plane/pkg/ttl/v3"
 )
 
 // Request is an alias for the discovery request type.

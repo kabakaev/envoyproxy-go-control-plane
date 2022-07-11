@@ -5,8 +5,8 @@ import (
 	"github.com/golang/protobuf/ptypes"
 	"github.com/golang/protobuf/ptypes/any"
 
-	discovery "github.com/envoyproxy/go-control-plane/envoy/service/discovery/v3"
-	"github.com/envoyproxy/go-control-plane/pkg/cache/types"
+	discovery "github.com/kabakaev/envoyproxy-go-control-plane/envoy/service/discovery/v3"
+	"github.com/kabakaev/envoyproxy-go-control-plane/pkg/cache/types"
 )
 
 var deltaResourceTypeURL = "type.googleapis.com/" + proto.MessageName(&discovery.Resource{})
