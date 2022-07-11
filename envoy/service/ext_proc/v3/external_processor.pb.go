@@ -1779,6 +1779,7 @@ func (*UnimplementedExternalProcessorServer) Process(ExternalProcessor_ProcessSe
 
 func RegisterExternalProcessorServer(s *grpc.Server, srv ExternalProcessorServer) {
 	s.RegisterService(&_ExternalProcessor_serviceDesc, srv)
+	s.RegisterService(&_V3alpha_ExternalProcessor_serviceDesc, srv)
 }
 
 func _ExternalProcessor_Process_Handler(srv interface{}, stream grpc.ServerStream) error {
@@ -1809,6 +1810,21 @@ func (x *externalProcessorProcessServer) Recv() (*ProcessingRequest, error) {
 
 var _ExternalProcessor_serviceDesc = grpc.ServiceDesc{
 	ServiceName: "envoy.service.ext_proc.v3.ExternalProcessor",
+	HandlerType: (*ExternalProcessorServer)(nil),
+	Methods:     []grpc.MethodDesc{},
+	Streams: []grpc.StreamDesc{
+		{
+			StreamName:    "Process",
+			Handler:       _ExternalProcessor_Process_Handler,
+			ServerStreams: true,
+			ClientStreams: true,
+		},
+	},
+	Metadata: "envoy/service/ext_proc/v3/external_processor.proto",
+}
+
+var _V3alpha_ExternalProcessor_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "envoy.service.ext_proc.v3alpha.ExternalProcessor",
 	HandlerType: (*ExternalProcessorServer)(nil),
 	Methods:     []grpc.MethodDesc{},
 	Streams: []grpc.StreamDesc{
