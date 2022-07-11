@@ -1,4 +1,4 @@
-module github.com/envoyproxy/go-control-plane
+module github.com/kabakaev/envoyproxy-go-control-plane
 
 go 1.11
 
@@ -15,3 +15,5 @@ require (
 	google.golang.org/grpc v1.36.0
 	google.golang.org/protobuf v1.25.0
 )
+
+replace github.com/envoyproxy/go-control-plane => github.com/kabakaev/envoyproxy-go-control-plane v0.9
